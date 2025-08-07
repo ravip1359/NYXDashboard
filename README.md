@@ -1,215 +1,153 @@
-# Campaign Analytics Dashboard
 
-> **Last Updated**: January 23, 2025 - Project has been updated with latest changes and improvements.
-> **Deployment Status**: Ready for GitHub Pages deployment
+# Executive Analytics Dashboard
 
-A modern, responsive analytics dashboard built with React, TypeScript, and Tailwind CSS. This dashboard provides comprehensive campaign performance metrics and analytics visualization.
+A modern, responsive Executive Dashboard built with React, TypeScript, and Tailwind CSS. This dashboard provides comprehensive business metrics and KPIs for executive-level decision making.
 
-## 🌐 Live Demo
+## 🚀 Features
 
-Visit the live application: [Campaign Analytics Dashboard](https://Yup0103.github.io/Dashboard/)
+- **Executive Command Center**: High-level business performance indicators
+- **Strategic Business Metrics**: Revenue, growth, and operational efficiency metrics  
+- **Real-time Performance Monitoring**: Live data updates and trend analysis
+- **B2C & B2B Views**: Switch between consumer and business customer analytics
+- **Interactive Visualizations**: Charts, graphs, and performance indicators
+- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
+- **Modern UI**: Dark theme with purple/blue gradient design system
 
-## Features
+## 📊 Dashboard Sections
 
-- **Campaign Performance Overview**
-  - Real-time metrics display (Clicks, Total Spend, Impressions)
-  - Interactive area charts for trend visualization
-  - Date range selection for custom time periods
+### Executive Priority Metrics
+- Revenue & Growth Performance
+- Operational Efficiency 
+- Customer Acquisition & Retention
+- Sales & Conversion Performance
+- Platform & Channel Performance
 
-- **Geographic Distribution**
-  - Region-wise performance breakdown
-  - Dynamic metric filtering (CTR, CPC, CPM)
-  - Visual progress indicators
-  - Country-specific performance tracking
+### Operational Metrics  
+- Traffic & User Engagement
+- E-commerce Performance
+- Engagement & Retention
 
-- **Interactive Components**
-  - Responsive data tables
-  - Dynamic metric toggles
-  - Real-time data updates
-  - Performance trend indicators
+### Analytical Insights
+- Revenue & Attribution Analysis
+- Budget & Forecasting
+- Audience Insights
+- Creative Performance
+- Detailed Attribution
 
-- **AI-Powered Features**
-  - Smart recommendations for campaign optimization
-  - AI Assistant for data analysis
-  - Automated workflow management
-  - B2B-specific analytics
+## 🛠 Technology Stack
 
-## 🚀 Deployment
+- **React 18** - Modern React with hooks
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first CSS framework
+- **Recharts** - Responsive chart library
+- **Radix UI** - Accessible component primitives
+- **Lucide React** - Beautiful icon library
+- **Vite** - Fast build tool and dev server
 
-### GitHub Pages Deployment
-
-This project is configured for automatic deployment to GitHub Pages.
-
-#### Prerequisites
-
-1. **GitHub Repository**: Ensure your code is in a GitHub repository
-2. **GitHub Pages Enabled**: Enable GitHub Pages in your repository settings
-
-#### Automatic Deployment (Recommended)
-
-1. **Push to Main Branch**: The application will automatically deploy when you push to the `main` or `master` branch
-2. **GitHub Actions**: The workflow will build and deploy your application automatically
-3. **Access Your App**: Visit `https://Yup0103.github.io/Dashboard/`
-
-#### Manual Deployment
-
-If you prefer manual deployment:
-
-```bash
-# Install dependencies
-npm install
-
-# Build the project
-npm run build
-
-# Deploy to GitHub Pages
-npm run deploy
-```
-
-#### Configuration
-
-1. **Update Repository Name**: Replace `Yup0103` in `package.json` with your actual GitHub username
-2. **Repository Settings**: 
-   - Go to Settings > Pages
-   - Set Source to "GitHub Actions"
-   - Ensure the repository is public
-
-## Running Locally
+## 🏃‍♂️ Getting Started
 
 ### Prerequisites
+- Node.js 16+ 
+- npm or yarn
 
-1. **Node.js Installation**
-   - Install Node.js (v16 or higher)
-   - Recommended: Use [nvm](https://github.com/nvm-sh/nvm) for Node.js version management
-   ```bash
-   # Using nvm
-   nvm install 16
-   nvm use 16
-   ```
+### Installation
 
-2. **Package Manager**
-   - The project uses npm by default
-   - You can also use yarn if preferred
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/Dashboard.git
+cd Dashboard
+```
 
-### Step-by-Step Setup
+2. Install dependencies:
+```bash
+npm install
+```
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/Yup0103/Dashboard.git
-   cd Dashboard
-   ```
+3. Start the development server:
+```bash
+npm run dev
+```
 
-2. **Install Dependencies**
-   ```bash
-   # Using npm
-   npm install
+4. Open your browser and navigate to `http://localhost:5000/Dashboard/`
 
-   # Or using yarn
-   yarn install
-   ```
-
-3. **Start Development Server**
-   ```bash
-   # Using npm
-   npm run dev
-
-   # Or using yarn
-   yarn dev
-   ```
-
-4. **Access the Application**
-   - Open your browser and navigate to [http://localhost:5173](http://localhost:5173)
-   - The app should hot-reload as you make changes
-
-### Troubleshooting
-
-1. **Port Conflicts**
-   - If port 5173 is in use, Vite will automatically try the next available port
-   - You can manually change the port in `vite.config.ts`
-
-2. **Dependencies Issues**
-   - If you encounter dependency conflicts:
-     ```bash
-     # Clear npm cache
-     npm cache clean --force
-     
-     # Remove node_modules and reinstall
-     rm -rf node_modules
-     npm install
-     ```
-
-3. **TypeScript Errors**
-   - Run type checking separately:
-     ```bash
-     npm run typecheck
-     ```
-
-4. **Development Environment**
-   - Ensure your IDE has TypeScript and React extensions installed
-   - Recommended VSCode extensions:
-     - ESLint
-     - Prettier
-     - TypeScript + JavaScript
-     - Tailwind CSS IntelliSense
-
-## Tech Stack
-
-- React 18
-- TypeScript
-- Tailwind CSS
-- Shadcn/ui Components
-- React Simple Maps
-- Lucide Icons
-- Recharts
-- React Router DOM
-- Vite
-
-## Project Structure
+## 📁 Project Structure
 
 ```
 src/
-  ├── components/           # React components
-  │   ├── ui/              # Reusable UI components
-  │   ├── AnalyticsDashboard.tsx
-  │   ├── RegionDistribution.tsx
-  │   ├── MapComponent.tsx
-  │   └── ...
-  ├── pages/               # Page components
-  ├── styles/              # Global styles
-  └── App.tsx             # Root component
+├── components/
+│   ├── ui/              # Reusable UI components
+│   ├── ExecutiveMetrics.tsx  # Main executive dashboard
+│   └── theme-provider.tsx    # Dark theme provider
+├── pages/
+│   └── Index.tsx        # Main dashboard page
+├── lib/
+│   └── utils.ts         # Utility functions
+├── hooks/
+│   └── use-toast.ts     # Toast notifications
+└── main.tsx             # App entry point
 ```
 
-## Component Documentation
+## 🎨 Design System
 
-### AnalyticsDashboard
-Main dashboard component that displays overall campaign performance metrics.
+The dashboard uses a sophisticated dark theme with:
+- **Primary Colors**: Purple gradients (#6D28D9, #4F46E5)
+- **Background**: Deep space gradient (#0A0B14, #1A0B2E)
+- **Text**: Light purple/white for excellent readability
+- **Accent Colors**: Emerald for positive metrics, Red for negative
+- **Glass Morphism**: Backdrop blur effects for modern UI
 
-### RegionDistribution
-Displays geographic distribution of campaign performance with:
-- Country-wise breakdown
-- Metric selection (CTR, CPC, CPM)
-- Performance change indicators
+## 📱 Responsive Breakpoints
 
-### MapComponent
-Interactive map visualization showing:
-- Regional performance heatmap
-- Country-specific highlights
-- Performance indicators
+- **Mobile**: 640px and below
+- **Tablet**: 768px - 1024px  
+- **Desktop**: 1024px and above
+- **Large Desktop**: 1440px and above
 
-## Contributing
+## 🚀 Deployment
+
+### Deploy to Replit
+
+1. Fork this repository on GitHub
+2. Import to Replit from GitHub
+3. The app will automatically deploy and be accessible via Replit's hosting
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+This creates an optimized production build in the `dist/` folder.
+
+## 🔧 Configuration
+
+### Environment Variables
+No environment variables are required for basic functionality. All data is currently mock data for demonstration purposes.
+
+### Customization
+- Update metric values in `ExecutiveMetrics.tsx`
+- Modify color scheme in `tailwind.config.js`
+- Add new metric sections by extending the `metricSections` array
+
+## 🤝 Contributing
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
-- Design inspiration from modern analytics dashboards
-- Built with [shadcn/ui](https://ui.shadcn.com/) components
-- Map visualization powered by [react-simple-maps](https://www.react-simple-maps.io/)
+- Built with ❤️ using modern React ecosystem
+- UI components powered by Radix UI
+- Icons by Lucide React
+- Charts by Recharts
+
+---
+
+**Live Demo**: [View Dashboard](https://yourusername.github.io/Dashboard/)
